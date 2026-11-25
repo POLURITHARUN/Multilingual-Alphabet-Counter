@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Multilingual Alphabet Counter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>LEARNING</h1>  
+    <div class="container">
+
+        <!-- English -->
+        <div class="card english">
+            <h2>English Letters</h2>
+            <div class="letter" id="englishLetter">A</div>
+            <p id="englishCount">1 / 26</p>
+            <div class="buttons">
+                <button onclick="changeLetter('english', -1)">Decrease</button>
+                <button onclick="changeLetter('english', 1)">Increase</button>
+            </div>
+            <button class="reset" onclick="resetLetter('english')">Reset</button>
+        </div>
+      
+        <!-- Telugu -->
+        <div class="card telugu">
+            <h2>Telugu Letters</h2>
+            <div class="letter" id="teluguLetter">అ</div>
+            <p id="teluguCount">1 / 60</p>
+            <div class="buttons">
+                <button onclick="changeLetter('telugu', -1)">Decrease</button>
+                <button onclick="changeLetter('telugu', 1)">Increase</button>
+            </div>
+            <button class="reset" onclick="resetLetter('telugu')">Reset</button>
+        </div>
+
+        <!-- Hindi -->
+        <div class="card hindi">
+            <h2>Hindi Letters</h2>
+            <div class="letter" id="hindiLetter">अ</div>
+            <p id="hindiCount">1 / 52</p>
+            <div class="buttons">
+                <button onclick="changeLetter('hindi', -1)">Decrease</button>
+                <button onclick="changeLetter('hindi', 1)">Increase</button>
+            </div>
+            <button class="reset" onclick="resetLetter('hindi')">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
